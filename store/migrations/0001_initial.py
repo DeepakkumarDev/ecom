@@ -62,6 +62,7 @@ class Migration(migrations.Migration):
                 ('placed_at', models.DateTimeField(auto_now_add=True)),
                 ('payment_status', models.CharField(choices=[('P', 'Pending'), ('C', 'Complete'), ('F', 'Failed')], default='P', max_length=1)),
                 ('customer', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='store.customer')),
+                
             ],
         ),
         migrations.CreateModel(
